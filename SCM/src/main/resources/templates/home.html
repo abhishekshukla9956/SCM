@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base::parent(~{::#content})}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" th-href="@{'/static/css/output.css'}" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="content" class="bg-gray-200 text-center">
+      <h1 class="text-2 font-bold">Home Page</h1>
+      <div class="color-blue-500 font-bold text-lg">Tailwind is working!</div>
+      <a data-th-href="link">Click</a>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi fuga
+        commodi aliquid itaque aperiam mollitia reprehenderit placeat rerum
+        nesciunt, iure deserunt aliquam quam, voluptates eos adipisci alias
+        nihil doloribus illo!
+      </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+  </body>
+</html>
